@@ -169,6 +169,8 @@ function calculateTax() {
 
             var onePercentTaxableSalary = (yearlyIncome / 100) * 1;
             var yearlyTaxCalculation = onePercentTaxableSalary;
+            var monthlyTaxPayable = yearlyTaxCalculation / 12;
+
             var taxPercent = '1%';
 
             var html = '<tr>' +
@@ -274,6 +276,7 @@ function calculateTax() {
             var thirtySixPercentTaxableAmount = (parseInt(remainingTaxableAmount) / 100) * 36;
             var yearlyTaxCalculation = tenPercentTaxableSalary + onePercentTaxableSalary + twentyPercentTaxableAmount + thirtyPercentTaxableAmount + thirtySixPercentTaxableAmount;
             var monthlyTaxPayable = yearlyTaxCalculation / 12;
+
             var taxPercent = '36%';
 
             var html = '<tr>' +
